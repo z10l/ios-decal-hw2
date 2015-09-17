@@ -11,5 +11,13 @@ Our app will be a custom keyboard -- think emojis, but with our own buttons and 
 ## Instructions
 1. Fork the assignment's repository from (https://github.com/iosdecal).
 2. Clone your forked repository to your local machine (the URL should contain YOUR_USERNAME/ios-decal-..).
-3. ** TBA  **
+3. ** Add to KeyboardViewController.swift and Keyboard.xib **
 4. Add, commit, and push your modified file(s) to your forked remote repository.
+
+## Requirements
+1. Must have a "Next Keyboard button"
+    - This is done for you already, but feel free to change the image,text,etc
+2. Must have a "Return button"
+3. Must have a "Delete button"
+4. Must have various "input buttons"
+    - Examples of inputs: ASCII Text, GIFS, Unicode, Emojis, etc. 

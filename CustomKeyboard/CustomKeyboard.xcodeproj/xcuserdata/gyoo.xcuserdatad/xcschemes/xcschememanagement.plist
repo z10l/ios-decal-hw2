@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CalKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CustomKeyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3AAA63951BA9263900E3822E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AAA63AF1BA9283500E3822E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

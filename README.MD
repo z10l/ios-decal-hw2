@@ -20,4 +20,7 @@ Our app will be a custom keyboard -- think emojis, but with our own buttons and 
 2. Must have a "Return button"
 3. Must have a "Delete button"
 4. Must have various "input buttons"
-    - Examples of inputs: ASCII Text, GIFS, Unicode, Emojis, etc. 
+    - Examples of inputs: ASCII Text, GIFS, Unicode, Emojis, etc.
+
+## Setup Video
+https://youtu.be/qY8V69PxP8Q

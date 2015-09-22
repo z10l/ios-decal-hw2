@@ -11,6 +11,8 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
+    @IBOutlet var returnButton: UIButton!
+    @IBOutlet var deleteButton: UIButton!
     
     var keyboardView: UIView!
 
@@ -45,7 +47,19 @@ class KeyboardViewController: UIInputViewController {
         view.addSubview(keyboardView)
         view.backgroundColor = keyboardView.backgroundColor
         nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside) // advanceToNextInputMode is already defined in template
+        returnButton.addTarget(self, action: "inputReturn", forControlEvents: .TouchUpInside)
+        deleteButton.addTarget(self, action: "deleteText", forControlEvents: .TouchUpInside)
     }
+    
+    func inputReturn() {
+        super.textDocumentProxy.insertText("\n")
+    }
+    
+    func deleteText() {
+        super.textDocumentProxy.deleteBackward()
+    }
+    
+    
 
 
 }

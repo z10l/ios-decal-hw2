@@ -6,7 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="awkwardButton" destination="mwI-z7-8dD" id="GoR-bQ-Y3n"/>
+                <outlet property="chillButton" destination="Tup-Wy-8tt" id="NOT-bP-RTI"/>
                 <outlet property="deleteButton" destination="qKT-oZ-nlc" id="bKA-zO-Hb9"/>
+                <outlet property="dislikeButton" destination="Krf-Ng-FGi" id="IK4-Ux-4Rv"/>
+                <outlet property="likeButton" destination="aPO-Xx-Qm1" id="IUd-U0-Ng8"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
                 <outlet property="returnButton" destination="267-YK-YQk" id="M2I-89-bsW"/>
             </connections>
@@ -16,87 +20,48 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
-                        <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="🌎"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="267-YK-YQk">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="267-YK-YQk">
                     <rect key="frame" x="321" y="85" width="46" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                    <state key="normal" title="⏎"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="return"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-oZ-nlc">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-oZ-nlc">
                     <rect key="frame" x="321" y="8" width="46" height="30"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                    <state key="normal" title="⌫"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="delete"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoR-Xm-pHo">
-                    <rect key="frame" x="110" y="26" width="46" height="30"/>
-                    <state key="normal" title="😀"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="8" y="162" width="40" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="next"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2n-ZO-7pD">
-                    <rect key="frame" x="218" y="26" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tup-Wy-8tt">
+                    <rect key="frame" x="108" y="48" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="😎"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNl-3w-tPg">
-                    <rect key="frame" x="110" y="85" width="46" height="30"/>
-                    <state key="normal" title="w"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwI-z7-8dD">
+                    <rect key="frame" x="201" y="48" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="😰"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bz-3k-hlb">
-                    <rect key="frame" x="164" y="85" width="46" height="30"/>
-                    <state key="normal" title="u"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPO-Xx-Qm1">
+                    <rect key="frame" x="108" y="112" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="👍"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cN-vB-GGi">
-                    <rect key="frame" x="218" y="85" width="46" height="30"/>
-                    <state key="normal" title="s"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je7-gf-UTB">
-                    <rect key="frame" x="110" y="140" width="46" height="30"/>
-                    <state key="normal" title="a"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8Z-Kg-Z5w">
-                    <rect key="frame" x="164" y="140" width="46" height="30"/>
-                    <state key="normal" title="o"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNM-uC-jPU">
-                    <rect key="frame" x="218" y="140" width="46" height="30"/>
-                    <state key="normal" title="p"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-UT-SEZ">
-                    <rect key="frame" x="164" y="26" width="46" height="30"/>
-                    <state key="normal" title="😂"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krf-Ng-FGi">
+                    <rect key="frame" x="201" y="112" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="👎"/>
                 </button>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="DNM-uC-jPU" secondAttribute="bottom" constant="30" id="400-ZG-Ib4"/>
-                <constraint firstItem="GoR-Xm-pHo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="5QP-lh-whT"/>
-                <constraint firstAttribute="trailing" secondItem="DNM-uC-jPU" secondAttribute="trailing" constant="111" id="7oU-QR-KgJ"/>
                 <constraint firstAttribute="trailing" secondItem="267-YK-YQk" secondAttribute="trailing" constant="8" id="A12-7h-8lZ"/>
-                <constraint firstAttribute="trailing" secondItem="TzF-UT-SEZ" secondAttribute="trailing" constant="165" id="CyW-fe-MNw"/>
                 <constraint firstAttribute="trailing" secondItem="qKT-oZ-nlc" secondAttribute="trailing" constant="8" id="E5T-jB-2Ai"/>
-                <constraint firstAttribute="bottom" secondItem="Je7-gf-UTB" secondAttribute="bottom" constant="30" id="E5U-Wa-UXP"/>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="trailing" secondItem="e2n-ZO-7pD" secondAttribute="trailing" constant="111" id="LWa-ex-Ijk"/>
-                <constraint firstAttribute="trailing" secondItem="4cN-vB-GGi" secondAttribute="trailing" constant="111" id="NV4-Ia-2zm"/>
-                <constraint firstItem="TzF-UT-SEZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Njp-lP-TJT"/>
-                <constraint firstItem="GoR-Xm-pHo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="O3o-T9-oOf"/>
                 <constraint firstItem="267-YK-YQk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Oc0-3P-5pg"/>
-                <constraint firstItem="D8Z-Kg-Z5w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WNh-ep-pML"/>
-                <constraint firstAttribute="bottom" secondItem="D8Z-Kg-Z5w" secondAttribute="bottom" constant="30" id="Xqn-P4-pga"/>
-                <constraint firstItem="dNl-3w-tPg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Znh-LC-Iag"/>
-                <constraint firstItem="2bz-3k-hlb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="chZ-93-dUV"/>
-                <constraint firstItem="2bz-3k-hlb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e4O-D3-LZs"/>
-                <constraint firstItem="TzF-UT-SEZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="hNJ-pK-kRx"/>
-                <constraint firstItem="e2n-ZO-7pD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="lvX-Fy-W3Z"/>
-                <constraint firstItem="Je7-gf-UTB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="qhF-HM-5AC"/>
-                <constraint firstItem="4cN-vB-GGi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rl0-Co-unf"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
-                <constraint firstItem="dNl-3w-tPg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="tub-Ov-FuA"/>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="WMH-Au-VqE"/>
                 <constraint firstItem="qKT-oZ-nlc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="vXh-46-JNC"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
